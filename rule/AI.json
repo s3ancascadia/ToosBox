@@ -1,0 +1,76 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "ai.google.dev",
+        "aida.googleapis.com",
+        "aistudio.google.com",
+        "alkalimakersuite-pa.clients6.google.com",
+        "api.githubcopilot.com",
+        "bard.google.com",
+        "chat.mistral.ai",
+        "chat.openai.com.cdn.cloudflare.net",
+        "console.mistral.ai",
+        "copilot-proxy.githubusercontent.com",
+        "copilot.microsoft.com",
+        "gemini.google.com",
+        "generativelanguage.googleapis.com",
+        "imagine.meta.com",
+        "makersuite.google.com",
+        "o33249.ingest.sentry.io",
+        "openaiapi-site.azureedge.net",
+        "openaicom.imgix.net",
+        "openaicomproductionae4b.blob.core.windows.net",
+        "production-openaicom-storage.azureedge.net",
+        "sydney.bing.com",
+        "www.bing.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "anthropic.com",
+        "chatgpt.com",
+        "claude.ai",
+        "grazie.ai",
+        "grazie.aws.intellij.net",
+        "meta.ai",
+        "mistral.ai",
+        "oaistatic.com",
+        "oaiusercontent.com",
+        "openai.com",
+        "perplexity.ai"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "160.79.104.0/23",
+        "2607:6bc0::/48"
+      ]
+    },
+    {
+      "mode": "and",
+      "rules": [
+        {
+          "domain_keyword": " chatgpt-async-webps-prod-eastus-"
+        },
+        {
+          "domain_suffix": " webpubsub.azure.com"
+        }
+      ],
+      "type": "logical"
+    },
+    {
+      "mode": "and",
+      "rules": [
+        {
+          "domain_keyword": " openaicom-api-"
+        },
+        {
+          "domain_suffix": " azurefd.net"
+        }
+      ],
+      "type": "logical"
+    }
+  ],
+  "version": 1
+}
